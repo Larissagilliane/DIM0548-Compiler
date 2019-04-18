@@ -27,11 +27,11 @@
 ([0-9]+)														{printf("%s : LITERAL_INT\n", yytext);}
 ("true")														{printf("%s : LITERAL_TRUE\n", yytext);}
 ("false")														{printf("%s : LITERAL_FALSE\n", yytext);}
-("if")															{printf("%s : IF_CLAUSE\n", yytext);}
-("else")														{printf("%s : ELSE_CLAUSE\n", yytext);}
-("return")													{printf("%s : RETURN_CLAUSE\n", yytext);}
-("for")															{printf("%s : FOR_CLAUSE\n", yytext);}
-("while")														{printf("%s : WHILE_CLAUSE\n", yytext);}
+("if")															{printf("%s : IF_C\n", yytext);}
+("else")														{printf("%s : ELSE_C\n", yytext);}
+("return")													{printf("%s : RETURN_C\n", yytext);}
+("for")															{printf("%s : FOR_C\n", yytext);}
+("while")														{printf("%s : WHILE_C\n", yytext);}
 (\() 			  												{printf("%s : PARENT_OPEN\n", yytext);}
 (\))				  											{printf("%s : PARENT_CLOSE\n", yytext);}
 (\{) 			  												{printf("%s : BRACES_OPEN\n", yytext);}
