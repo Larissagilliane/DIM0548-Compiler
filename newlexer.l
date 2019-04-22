@@ -29,6 +29,8 @@
 "int"														{printf("%s : TYPE_INT\n", yytext);}
 "void"														{printf("%s : TYPE_VOID\n", yytext);}
 
+[\/\/.*\n]														;
+
 [[\/\*([^*]]|[\r\n]|[\*+[^*\/]]|[[\r\n]*\*+\/]|[\/\/.*] 		;
 [ \t\r\n]           							;
 [\".+[^\\]\"]												{printf("%s : LITERAL_STRING\n", yytext);}
